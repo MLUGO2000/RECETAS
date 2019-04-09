@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightPrimaryColor"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.lugo.manueln.recetas.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/menu_p"
+            android:name="com.lugo.manueln.recetas.f_principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_f_principal"></fragment>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/b_nueva_receta_Alto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/boton_registro"
+                style="@style/Boton_P"
+                android:layout_width="@dimen/b_nueva_receta_Ancho"
+                android:layout_height="@dimen/b_nueva_receta_Alto"
+                android:layout_gravity="center_horizontal"
+                android:elevation="0dp"
+                android:text="Agregar Receta" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="640px"
+                    android:layout_height="360px"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@null"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/text_ultima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageButton1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="14dp"
+                    android:background="@color/fondo_letra__r_ultima"
+                    android:elevation="1dp"
+                    android:gravity="center_horizontal"
+                    android:text="Prueba ImageButton"
+                    android:textColor="@color/primaryText"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

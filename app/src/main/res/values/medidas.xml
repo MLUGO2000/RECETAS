@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="combo_medidas">
+        <item>"Kg"</item>
+        <item>gr</item>
+        <item>l</item>
+        <item>ml</item>
+        <item>cup</item>
+    </string-array>
+</resources>
